@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.contacts {
+    margin-bottom: 20px;
+}
+
+.social-media button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.social-media .telegram {
+    background-color: #0088cc;
+    color: white;
+}
+
+.social-media .vk {
+    background-color: #4c75a3;
+    color: white;
+}
+
+.social-media .instagram {
+    background-color: #e4405f;
+    color: white;
+}
+
+.tables {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.table-image {
+    width: 150px;  /* Маленький размер изображений */
+    height: auto;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
