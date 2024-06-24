@@ -1,87 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-image: url('header-bg.jpg');
+    font-family: Arial, sans-serif;
+    background: url('header-bg.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+header {
+    text-align: center;
     color: white;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
+h1 {
+    margin: 0;
+    font-size: 3em;
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-}
-
-.content {
-    text-align: center;
-    padding: 20px;
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 .contacts {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.social-media button {
+.contacts .btn {
+    display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.social-media .telegram {
-    background-color: #0088cc;
+    font-size: 1.2em;
     color: white;
-}
-
-.social-media .vk {
-    background-color: #4c75a3;
-    color: white;
-}
-
-.social-media .instagram {
-    background-color: #e4405f;
-    color: white;
-}
-
-.tables {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.table-image {
-    width: 150px;  /* Маленький размер изображений */
-    height: auto;
-    margin: 0 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 300px;
-}
-
-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
+.contacts .btn:hover {
+    background-color: #0056b3;
+}
