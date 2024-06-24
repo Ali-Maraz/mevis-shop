@@ -21,7 +21,6 @@
             margin: 0 auto;
         }
         .container {
-            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
@@ -47,6 +46,28 @@
             height: auto;
             border-radius: 5px;
         }
+        .contact-form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +90,15 @@
             <img src="/static/ali_2.jpg" alt="Product Image 2">
             <img src="/static/ali_3.jpg" alt="Product Image 3">
             <img src="/static/ali_4.jpg" alt="Product Image 4">
+        </div>
+        <div class="contact-form">
+            <h2>Свяжитесь с нами</h2>
+            <form action="mailto:mebelvstile18@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </header>
 </body>
