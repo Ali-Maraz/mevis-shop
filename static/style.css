@@ -12,6 +12,14 @@ header {
     padding: 20px;
 }
 
+.company-info {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
 .contacts a {
     color: #007BFF;
     text-decoration: none;
