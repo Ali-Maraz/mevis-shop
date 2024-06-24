@@ -4,103 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mevis</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <style>
-        body {
-            background: url('/static/header-bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-        }
-        .logo {
-            max-width: 200px;
-            margin: 0 auto;
-        }
-        .container {
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 50px;
-        }
-        .contacts a {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .products {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .products img {
-            width: 150px;
-            height: auto;
-            border-radius: 5px;
-        }
-        .contact-form {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            border-radius: 5px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
-        <img src="/static/logo.jpg" alt="Mevis" class="logo">
-        <div class="container">
-            <h1>Mevis</h1>
-            <p>Mevis с 2020 года обеспечивает клиентов по всей России качественной мебелью, придающей интерьеру 
-особенный характер. У нас более 10 000 довольных клиентов. Наше производство находится в городе Ижевск. С нами ваш дом 
-наполнится стилем и комфортом.</p>
-            <p>Телефон: +7 919 912-04-03</p>
-            <p>Email: mebelvstile18@gmail.com</p>
-            <div class="contacts">
-                <a href="https://t.me/Ahtamrus">Телеграм</a>
-                <a href="https://vk.com/mebel.vstile">ВКонтакте</a>
-            </div>
-        </div>
-        <div class="products">
-            <img src="/static/ali_1.jpg" alt="Product Image 1">
-            <img src="/static/ali_2.jpg" alt="Product Image 2">
-            <img src="/static/ali_3.jpg" alt="Product Image 3">
-            <img src="/static/ali_4.jpg" alt="Product Image 4">
-        </div>
-        <div class="contact-form">
-            <h2>Свяжитесь с нами</h2>
-            <form action="mailto:mebelvstile18@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="email" name="email" placeholder="Ваш email" required>
-                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-                <button type="submit">Отправить</button>
-            </form>
+        <img src="static/logo.jpg" alt="Mevis Logo" style="display: block; margin: 0 auto;">
+        <p>Mevis с 2020 года обеспечивает клиентов по всей России качественной мебелью, придающей интерьеру особенный 
+характер. У нас более 10 000 довольных клиентов. Наше производство находится в городе Ижевск. С нами ваш дом наполнится 
+стилем и комфортом.</p>
+        <p>Телефон: +7 919 912-04-03</p>
+        <p>Email: mebelvstile18@gmail.com</p>
+        <div class="contacts" style="text-align: center;">
+            <a href="https://t.me/Ahtamrus" style="margin-right: 20px;">Телеграм</a>
+            <a href="https://vk.com/mebel.vstile">ВКонтакте</a>
         </div>
     </header>
+    <main>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+            <img src="static/ali_1.jpg" alt="Product Image 1" style="width: 200px; height: auto;">
+            <img src="static/ali_2.jpg" alt="Product Image 2" style="width: 200px; height: auto;">
+            <img src="static/ali_3.jpg" alt="Product Image 3" style="width: 200px; height: auto;">
+            <img src="static/ali_4.jpg" alt="Product Image 4" style="width: 200px; height: auto;">
+        </div>
+        <section style="text-align: center; margin-top: 40px;">
+            <h2>Свяжитесь с нами</h2>
+            <form action="mailto:mebelvstile18@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Ваше имя</label><br>
+                <input type="text" id="name" name="name" style="width: 80%; padding: 10px; margin-top: 10px;"><br><br>
+                <label for="email">Ваш email</label><br>
+                <input type="email" id="email" name="email" style="width: 80%; padding: 10px; margin-top: 
+10px;"><br><br>
+                <label for="message">Ваше сообщение</label><br>
+                <textarea id="message" name="message" rows="4" style="width: 80%; padding: 10px; margin-top: 
+10px;"></textarea><br><br>
+                <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; 
+cursor: pointer;">Отправить</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
 
