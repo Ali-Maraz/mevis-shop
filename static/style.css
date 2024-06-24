@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('static/header-bg.jpg') no-repeat center center fixed;
+    background: url('/static/header-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -31,11 +31,10 @@ header {
 }
 
 main {
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
-    color: black; /* Текст основного содержимого будет черным для лучшей читаемости */
+    color: black;
 }
 
 h2 {
