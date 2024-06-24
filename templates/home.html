@@ -1,47 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mevis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <div class="header">
-        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Mevis Logo" 
-class="logo">
-        <h1>Mevis с 2020 года обеспечивает клиентов по всей России качественной 
-мебелью, придающей интерьеру особенный характер. У нас более 10 000 довольных 
-клиентов. Наше производство находится в городе Ижевск. С нами ваш дом наполнится 
-стилем и комфортом.</h1>
-    </div>
-
-    <div class="content">
+    <header>
+        <h1>Mevis</h1>
+        <p>Mevis с 2020 года обеспечивает клиентов по всей России качественной мебелью, придающей интерьеру особенный характер. У нас более 10 000 довольных клиентов. Наше производство находится в городе Ижевск. С нами ваш дом наполнится стилем и комфортом.</p>
+        <p>Телефон: +7 919 912-04-03</p>
+        <p>Email: mebelvstile18@gmail.com</p>
         <div class="contacts">
-            <p>Телефон: +7 904 247 06 75</p>
-            <p>Email: alierik0404@gmail.com</p>
+            <a href="https://t.me/Ahtamrus">Телеграм</a>
+            <a href="https://vk.com/mebel.vstile">ВКонтакте</a>
+            <a href="https://www.instagram.com/mevis/">Инстаграм</a>
         </div>
-
-        <div class="social-media">
-            <button class="telegram">Телеграм</button>
-            <button class="vk">ВКонтакте</button>
-            <button class="instagram">Инстаграм</button>
-        </div>
-
-        <div class="tables">
-            <a href="video1_link"><img src="{{ url_for('static', 
-filename='your_image1.jpg') }}" alt="Table 1" class="table-image"></a>
-            <a href="video2_link"><img src="{{ url_for('static', 
-filename='your_image2.jpg') }}" alt="Table 2" class="table-image"></a>
-        </div>
-    </div>
-
-    <form action="/submit" method="POST">
-        <input type="text" name="name" placeholder="Имя">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Сообщение"></textarea>
-        <button type="submit">Отправить</button>
-    </form>
+    </header>
+    <main>
+    </main>
 </body>
 </html>
 
