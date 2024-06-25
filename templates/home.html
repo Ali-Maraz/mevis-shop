@@ -7,43 +7,43 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="background">
-        <header class="header">
-            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Mevis Logo" class="logo">
-            <div class="company-info">
-                <p>Mevis с 2020 года обеспечивает клиентов по всей России качественной мебелью, придающей интерьеру особенный характер. У 
-нас более 10 000 довольных клиентов. Наше производство находится в городе Ижевск. С нами ваш дом наполнится стилем и комфортом.</p>
-                <p>Телефон: +7 919 912-04-03</p>
-                <p>Email: mebelvstile18@gmail.com</p>
-            </div>
-            <div class="social-buttons">
-                <a href="https://t.me/yourtelegram" class="btn">Телеграм</a>
-                <a href="https://vk.com/yourvk" class="btn">ВКонтакте</a>
-                <a href="https://wa.me/79199120403" class="btn">WhatsApp</a>
-            </div>
-        </header>
-        <div class="products">
-            <a href="https://disk.yandex.ru/i/rbc1VVMXbiLoqg" class="product"><img src="{{ url_for('static', filename='ali_1.jpg') }}" 
+    <div class="background"></div>
+    <header class="header">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Mevis Logo" class="logo">
+        <div class="company-info">
+            <p>Mevis с 2020 года обеспечивает клиентов по всей России качественной мебелью, придающей интерьеру особенный характер. У нас 
+более 10 000 довольных клиентов. Наше производство находится в городе Ижевск. С нами ваш дом наполнится стилем и комфортом.</p>
+            <p>Телефон: +7 919 912-04-03 <a href="https://wa.me/79199120403" target="_blank"><img src="{{ url_for('static', 
+filename='whatsapp_icon.png') }}" alt="WhatsApp" class="whatsapp-icon"></a></p>
+            <p>Email: mebelvstile18@gmail.com</p>
+        </div>
+        <div class="social-buttons">
+            <a href="https://t.me/yourtelegram" class="btn">Телеграм</a>
+            <a href="https://vk.com/yourvk" class="btn">ВКонтакте</a>
+            <a href="https://wa.me/79199120403" class="btn">WhatsApp</a>
+        </div>
+    </header>
+    <div class="products">
+        <a href="https://disk.yandex.ru/i/rbc1VVMXbiLoqg" class="product"><img src="{{ url_for('static', filename='ali_1.jpg') }}" 
 alt="Product Image 1"></a>
-            <a href="https://disk.yandex.ru/i/jLFBoSQR66XL4Q" class="product"><img src="{{ url_for('static', filename='ali_2.jpg') }}" 
+        <a href="https://disk.yandex.ru/i/jLFBoSQR66XL4Q" class="product"><img src="{{ url_for('static', filename='ali_2.jpg') }}" 
 alt="Product Image 2"></a>
-            <a href="https://disk.yandex.ru/i/jLFBoSQR66XL4Q" class="product"><img src="{{ url_for('static', filename='ali_3.jpg') }}" 
+        <a href="https://disk.yandex.ru/i/jLFBoSQR66XL4Q" class="product"><img src="{{ url_for('static', filename='ali_3.jpg') }}" 
 alt="Product Image 3"></a>
-            <a href="https://disk.yandex.ru/i/qA1Uq0oP6B0gdA" class="product"><img src="{{ url_for('static', filename='ali_4.jpg') }}" 
+        <a href="https://disk.yandex.ru/i/qA1Uq0oP6B0gdA" class="product"><img src="{{ url_for('static', filename='ali_4.jpg') }}" 
 alt="Product Image 4"></a>
-        </div>
-        <div class="contact-form">
-            <h2 class="contact-title">Свяжитесь с нами</h2>
-            <form action="/contact" method="post">
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Ваш email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Ваше сообщение</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
+    </div>
+    <div class="contact-form">
+        <h2 class="contact-title">Свяжитесь с нами</h2>
+        <form action="/contact" method="post">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Ваше сообщение</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
 </body>
 </html>
