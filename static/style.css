@@ -1,38 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-bg {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-info {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.social-buttons {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
+.vk {
+    background-color: #4c75a3;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
 .contact-title {
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 400px;
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
 }
 
-.contact-form form label,
-.contact-form form input,
-.contact-form form textarea,
-.contact-form form button {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.contact-form form button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.contact-form form button:hover {
-  background-color: #45a049;
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
 }
 
