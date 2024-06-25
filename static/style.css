@@ -1,109 +1,79 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background: url('../static/header-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .header {
-    position: relative;
     text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-}
-
-.header-bg {
-    width: 100%;
-    height: auto;
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .contact-info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
+    margin-top: 20px;
 }
 
 .social-buttons {
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
+    margin-top: 20px;
 }
 
 .button {
+    display: inline-block;
+    margin: 10px;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.telegram {
-    background-color: #0088cc;
-}
-
-.vk {
-    background-color: #4c75a3;
-}
-
-.whatsapp {
-    background-color: #25d366;
-}
-
-.products {
+.product-gallery {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    max-width: 200px;
+    margin: 10px;
 }
 
 .contact-section {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto 20px;
     text-align: center;
 }
 
 .contact-title {
-    font-size: 24px;
-    margin-bottom: 20px;
     color: white;
 }
 
-form {
+.contact-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
 }
 
-input, textarea {
+.contact-form input, .contact-form textarea {
+    margin: 10px;
     padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
+    width: 80%;
 }
 
-button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4caf50;
+.contact-form button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
