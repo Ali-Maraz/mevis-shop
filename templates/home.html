@@ -93,6 +93,17 @@
         .products img:hover {
             transform: scale(1.05);
         }
+
+        /* Стиль для заголовка "Свяжитесь с нами" */
+        .contact-title {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.5); /* Прозрачный черный фон */
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-align: center; /* Выровняем текст по центру */
+            color: white; /* Установим цвет текста */
+        }
     </style>
 </head>
 <body>
@@ -124,7 +135,7 @@
             </a>
         </div>
         <form>
-            <h2>Свяжитесь с нами</h2>
+            <h2 class="contact-title">Свяжитесь с нами</h2>
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="email" name="email" placeholder="Ваш email">
             <textarea name="message" placeholder="Ваше сообщение"></textarea>
