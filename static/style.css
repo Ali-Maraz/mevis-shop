@@ -2,13 +2,15 @@ body {
     font-family: Arial, sans-serif;
     background: url('../static/header-bg.jpg') no-repeat center center fixed;
     background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
 }
 
 .logo {
@@ -47,14 +49,14 @@ body {
 }
 
 .contact-section {
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     text-align: center;
 }
 
 .contact-title {
-    color: white;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: inline-block;
 }
 
 .contact-form {
